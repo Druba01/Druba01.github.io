@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just a website...</title>
+    <title>Simple Webpage</title>
     <style>
         body {
             margin: 0;
@@ -16,16 +16,17 @@
             color: white;
             font-family: 'Georgia', serif;
             text-align: center;
+            overflow: hidden; /* Prevents scrolling */
         }
         .container {
-            max-width: 100%;
-            padding: 0 20px; /* Add padding for smaller screens */
+            max-width: 90%;
+            padding: 0 20px; /* Padding for smaller screens */
         }
         .main-heading {
             font-size: 4.5em;
             font-weight: normal;
             margin-bottom: 20px;
-            white-space: nowrap; /* Prevents the heading from breaking into two lines */
+            white-space: nowrap;
         }
         .sub-heading {
             font-size: 1.25em;
@@ -36,6 +37,26 @@
             position: absolute;
             bottom: 10px;
             width: 100%;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .main-heading {
+                font-size: 3.5em;
+            }
+            .sub-heading {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            .main-heading {
+                font-size: 2.5em;
+            }
+            .sub-heading {
+                font-size: 0.9em;
+            }
+            .footer-text {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
