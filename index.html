@@ -20,45 +20,67 @@
         }
         .container {
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px;
             padding: 0 20px;
             box-sizing: border-box;
         }
         .main-heading {
-            font-size: 4.5em; /* Fixed size for desktop/laptop */
+            font-size: 4.5em; /* Default size for larger screens */
             font-weight: normal;
             margin-bottom: 20px;
             white-space: nowrap;
         }
         .sub-heading {
-            font-size: 1.25em; /* Fixed size for desktop/laptop */
+            font-size: 1.25em; /* Default size for larger screens */
             margin-bottom: 50px;
             line-height: 1.4;
         }
         .footer-text {
-            font-size: 0.9em; /* Fixed size for desktop/laptop */
+            font-size: 0.9em; /* Default size for larger screens */
             position: absolute;
             bottom: 10px;
             width: 100%;
         }
-        /* Adjustments for smaller screens */
+
+        /* Tablet view adjustments */
+        @media (max-width: 1024px) {
+            .main-heading {
+                font-size: 4em;
+            }
+            .sub-heading {
+                font-size: 1.2em;
+            }
+            .footer-text {
+                font-size: 0.85em;
+            }
+        }
+
+        /* Mobile view adjustments */
         @media (max-width: 768px) {
             .main-heading {
-                font-size: 3.5em;
+                font-size: 3em;
             }
             .sub-heading {
                 font-size: 1.1em;
-            }
-        }
-        @media (max-width: 480px) {
-            .main-heading {
-                font-size: 2.5em;
-            }
-            .sub-heading {
-                font-size: 1em;
+                margin-bottom: 40px;
             }
             .footer-text {
                 font-size: 0.8em;
+            }
+        }
+
+        /* Small mobile view adjustments */
+        @media (max-width: 480px) {
+            .main-heading {
+                font-size: 2.5em;
+                margin-bottom: 15px;
+            }
+            .sub-heading {
+                font-size: 1em;
+                margin-bottom: 30px;
+            }
+            .footer-text {
+                font-size: 0.75em;
             }
         }
     </style>
