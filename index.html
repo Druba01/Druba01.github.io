@@ -16,46 +16,42 @@
             color: white;
             font-family: 'Georgia', serif;
             text-align: center;
-            overflow: hidden; /* Prevents scrolling */
+            overflow: hidden;
         }
         .container {
-            max-width: 90%;
-            padding: 0 20px; /* Padding for smaller screens */
+            width: 100%;
+            max-width: 1000px;
+            padding: 0 10px; /* Reduced padding for smaller screens */
+            box-sizing: border-box;
         }
         .main-heading {
-            font-size: 4.5em;
+            font-size: 8vw; /* Responsive font size based on viewport width */
             font-weight: normal;
             margin-bottom: 20px;
             white-space: nowrap;
         }
         .sub-heading {
-            font-size: 1.25em;
-            margin-bottom: 50px;
+            font-size: 3vw; /* Responsive font size */
+            margin-bottom: 40px;
+            line-height: 1.4;
         }
         .footer-text {
-            font-size: 0.9em;
+            font-size: 2vw; /* Responsive font size */
             position: absolute;
             bottom: 10px;
             width: 100%;
         }
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .main-heading {
-                font-size: 3.5em;
-            }
-            .sub-heading {
-                font-size: 1em;
-            }
-        }
+        /* Fine-tuning for very small screens */
         @media (max-width: 480px) {
             .main-heading {
-                font-size: 2.5em;
+                font-size: 10vw;
             }
             .sub-heading {
-                font-size: 0.9em;
+                font-size: 4vw;
+                margin-bottom: 30px;
             }
             .footer-text {
-                font-size: 0.8em;
+                font-size: 3vw;
             }
         }
     </style>
