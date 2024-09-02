@@ -16,36 +16,38 @@
             color: white;
             font-family: 'Georgia', serif;
             text-align: center;
-            overflow: hidden;
         }
         .container {
-            width: 100%;
             max-width: 1000px;
+            width: 100%;
             padding: 0 20px;
             box-sizing: border-box;
         }
         .main-heading {
-            font-size: 4.5em; /* Default size for larger screens */
+            font-size: 4.5em;
             font-weight: normal;
             margin-bottom: 20px;
             white-space: nowrap;
         }
         .sub-heading {
-            font-size: 1.25em; /* Default size for larger screens */
+            font-size: 1.25em;
             margin-bottom: 50px;
             line-height: 1.4;
         }
         .footer-text {
-            font-size: 0.9em; /* Default size for larger screens */
+            font-size: 0.9em;
             position: absolute;
             bottom: 10px;
+            left: 0;
+            right: 0;
             width: 100%;
+            text-align: center;
         }
 
         /* Tablet view adjustments */
         @media (max-width: 1024px) {
             .main-heading {
-                font-size: 4em;
+                font-size: 3.5em;
             }
             .sub-heading {
                 font-size: 1.2em;
@@ -58,7 +60,7 @@
         /* Mobile view adjustments */
         @media (max-width: 768px) {
             .main-heading {
-                font-size: 3em;
+                font-size: 2.5em;
             }
             .sub-heading {
                 font-size: 1.1em;
@@ -72,7 +74,7 @@
         /* Small mobile view adjustments */
         @media (max-width: 480px) {
             .main-heading {
-                font-size: 2.5em;
+                font-size: 2em;
                 margin-bottom: 15px;
             }
             .sub-heading {
@@ -81,6 +83,20 @@
             }
             .footer-text {
                 font-size: 0.75em;
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 375px) {
+            .main-heading {
+                font-size: 1.8em;
+            }
+            .sub-heading {
+                font-size: 0.9em;
+                margin-bottom: 20px;
+            }
+            .footer-text {
+                font-size: 0.7em;
             }
         }
     </style>
@@ -92,9 +108,9 @@
             This is my first attempt creating a website, so don’t complain about anything.<br>
             By the way, something’s better than nothing.
         </div>
-    </div>
-    <div class="footer-text">
-        Because, you may not even have a website, but I do.
+        <div class="footer-text">
+            Because, you may not even have a website, but I do.
+        </div>
     </div>
 </body>
 </html>
