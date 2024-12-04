@@ -1,126 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Favicon for druba01.github.io.png" type="image/png">
     <title>Just a website...</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-            color: white;
-            font-family: 'Georgia', serif;
-            text-align: center;
-        }
-        .container {
-            max-width: 1000px;
-            width: 100%;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-        .main-heading {
-            font-size: 4.5em;
-            font-weight: normal;
-            margin-bottom: 20px;
-            white-space: nowrap;
-        }
-        .sub-heading {
-            font-size: 1.25em;
-            margin-bottom: 50px;
-            line-height: 1.4;
-        }
-        .footer-text {
-            font-size: 0.9em;
-            position: absolute;
-            bottom: 10px;
-            left: 0;
-            right: 0;
-            width: 100%;
-            text-align: center;
-        }
-
-        /* Tablet view adjustments */
-        @media (max-width: 1024px) {
-            .main-heading {
-                font-size: 3.5em;
-            }
-            .sub-heading {
-                font-size: 1.2em;
-            }
-            .footer-text {
-                font-size: 0.85em;
-            }
-        }
-
-        /* Mobile view adjustments */
-        @media (max-width: 768px) {
-            .container {
-                margin-top: -10%;
-            }
-            .main-heading {
-                font-size: 2.5em;
-            }
-            .sub-heading {
-                font-size: 1.1em;
-                margin-bottom: 40px;
-            }
-            .footer-text {
-                font-size: 0.8em;
-            }
-        }
-
-        /* Small mobile view adjustments */
-        @media (max-width: 480px) {
-            .container {
-                margin-top: -15%;
-            }
-            .main-heading {
-                font-size: 2em;
-                margin-bottom: 15px;
-            }
-            .sub-heading {
-                font-size: 1em;
-                margin-bottom: 30px;
-            }
-            .footer-text {
-                font-size: 0.75em;
-            }
-        }
-
-        /* Extra small screens */
-        @media (max-width: 375px) {
-            .container {
-                margin-top: -20%;
-            }
-            .main-heading {
-                font-size: 1.8em;
-            }
-            .sub-heading {
-                font-size: 0.9em;
-                margin-bottom: 20px;
-            }
-            .footer-text {
-                font-size: 0.7em;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work in Progress</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="main-heading">Hello, thanks for visiting.</div>
-        <div class="sub-heading">
-            This is my first attempt creating a website, so don’t complain about anything.<br>
-            By the way, something’s better than nothing.
+        <h1 class="title">Work in Progress</h1>
+        <p class="subtitle">Our new website is under construction. Stay tuned!</p>
+        <div class="progress-bar">
+            <div class="progress"></div>
         </div>
-        <div class="footer-text">
-            Because, you may not even have a website, but I do.
-        </div>
+        <p class="status">Progress: 45%</p>
     </div>
 </body>
 </html>
